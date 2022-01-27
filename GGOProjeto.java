@@ -72,6 +72,16 @@ public class GGOProjeto extends HttpServlet {
 		} else if (val1 > 0 && val2 > 0 && val3 > 0 && (val1 != val2 || val1 != val3 || val2 != val3 )) {
 			response.getWriter().println("Triângulo Escaleno");
 		}
+		
+
+		// verificar se é uma reta
+		if(val1 == 0 && val2 == 0 && val3 > 0) {
+			response.getWriter().println("É uma reta");
+		}else if(val2 == 0 && val3 == 0 && val1 > 0 ) {
+			response.getWriter().println("É uma reta");
+		}else if(val1 == 0 && val3 == 0 && val2 > 0 ) {
+			response.getWriter().println("É uma reta");
+		}
 
 		
 	
