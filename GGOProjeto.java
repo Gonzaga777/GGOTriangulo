@@ -64,7 +64,14 @@ public class GGOProjeto extends HttpServlet {
 			response.getWriter().println("quadrado Retangulo e a Area e igual a:" + result);
 		}
 		
-		
+		// calculo para ver o tipo do triangulo
+		if(val1 > 0 && val2 > 0 && val3 > 0 && val1 == val2 && val2 == val3) {
+			response.getWriter().println("Triângulo Equilátero");
+		}else if(val1 > 0 && val2 > 0 && val3 > 0 && (val1 == val2 || val1 == val3 || val2 == val3)) {
+			response.getWriter().println("Triângulo Isósceles");
+		} else if (val1 > 0 && val2 > 0 && val3 > 0 && (val1 != val2 || val1 != val3 || val2 != val3 )) {
+			response.getWriter().println("Triângulo Escaleno");
+		}
 
 		
 	
