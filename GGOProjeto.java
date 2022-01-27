@@ -44,17 +44,17 @@ public class GGOProjeto extends HttpServlet {
 		// calculando se o quadrado é retangulo ou não
 		if (val1 == 0 && val2 > 0 && val3 > 0 && (val2 == val3)){
 			result = val2 * val3;
-			response.getWriter().println("é um quadrado e a Area e igual a:" + result);
+			response.getWriter().println("Eh um quadrado e a Area e igual a: " + result);
 		}else if(val2 == 0 && val3 > 0 && val1 > 0 && (val1 == val3)) {
 			result = val3 * val1;
-			response.getWriter().println("é um quadrado  e a Area e igual a:" + result);
+			response.getWriter().println("Eh um quadrado  e a Area e igual a:" + result);
 		}else if(val3 == 0 && val1 > 0 && val2 > 0 && (val2 == val1)) {
 			result = val2 * val1;
-			response.getWriter().println("é um quadrado  e a Area e igual a:" + result);
+			response.getWriter().println("Eh um quadrado  e a Area e igual a:" + result);
 		}
 		else if(val3 == 0 && val1 > 0 && val2 > 0 && val1 > 0 && ( val1 != val2)) {
 			result = val1 * val2;
-			response.getWriter().println("é um quadrado Retangulo e a Area e igual a:" + result);
+			response.getWriter().println("Eh um quadrado Retangulo e a Area e igual a:" + result);
 		}
 		else if(val2 == 0 && val3 > 0 && val1 > 0 &&  (val1 != val3)) {
 			result = val1 * val3;
@@ -76,11 +76,11 @@ public class GGOProjeto extends HttpServlet {
 
 		// verificar se é uma reta
 		if(val1 == 0 && val2 == 0 && val3 > 0) {
-			response.getWriter().println("É uma reta");
+			response.getWriter().println("Eh uma reta");
 		}else if(val2 == 0 && val3 == 0 && val1 > 0 ) {
-			response.getWriter().println("É uma reta");
+			response.getWriter().println("Eh uma reta");
 		}else if(val1 == 0 && val3 == 0 && val2 > 0 ) {
-			response.getWriter().println("É uma reta");
+			response.getWriter().println("Eh uma reta");
 		}
 
 		
